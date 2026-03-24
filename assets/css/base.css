@@ -1,17 +1,17 @@
 :root {
-  --color-bg: #f7f9f8;
+  --color-bg: #F1F3E0; /* Light Brown / Beige */
   --color-surface: #ffffff;
-  --color-primary: #20b072;
-  --color-primary-soft: #d9f6e7;
-  --color-brown: #8b5a3c;
-  --color-text-main: #0f172a;
-  --color-text-muted: #6b7280;
-  --color-border-subtle: #e5e7eb;
+  --color-primary: #A1BC98; /* Light Green */
+  --color-primary-dark: #778873; /* Dark Green */
+  --color-primary-soft: rgba(161, 188, 152, 0.15);
+  --color-text-main: #1f2937;
+  --color-text-muted: #4b5563;
+  --color-border-subtle: rgba(119, 136, 115, 0.12);
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-pill: 999px;
-  --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.08);
-  --shadow-subtle: 0 8px 24px rgba(15, 23, 42, 0.04);
+  --shadow-soft: 0 18px 45px rgba(119, 136, 115, 0.08);
+  --shadow-subtle: 0 8px 24px rgba(119, 136, 115, 0.04);
   --transition-fast: 200ms ease;
   --transition-med: 320ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -30,7 +30,7 @@ body {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, system-ui, -webkit-system-font, "SF Pro Text", "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top left, #eaf7f0 0, #f7f9f8 40%, #fefdfb 100%);
+  background: var(--color-bg);
   color: var(--color-text-main);
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
@@ -252,14 +252,14 @@ main {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #20b072, #16a864);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: #ffffff;
   box-shadow: var(--shadow-soft);
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.16);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(119, 136, 115, 0.2);
 }
 
 .nav-right .btn-secondary {
