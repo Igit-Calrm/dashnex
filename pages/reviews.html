@@ -12,25 +12,27 @@
     <header class="nav-shell">
       <div class="container nav">
         <div class="nav-left">
-          <div class="brand-mark">5★</div>
+          <div class="footer-logo-box">5★</div>
           <div class="brand-text">
-            <div class="brand-name">5star Co-Hosting</div>
-            <div class="brand-tagline">Short-Term Rental Co-Hosting & Licensing</div>
+            <div class="brand-name">Co-Hosting</div>
           </div>
         </div>
         <nav class="nav-center">
-          <a href="/home" class="nav-link">Home</a>
-          <a href="/about" class="nav-link">About Us</a>
-          <a href="/services" class="nav-link">Services</a>
-          <a href="/management-plans" class="nav-link">Management Plans</a>
-          <a href="/why-choose-us" class="nav-link">Why Choose Us</a>
-          <a href="/reviews" class="nav-link nav-link-active">Reviews</a>
-          <a href="/faqs" class="nav-link">FAQ's</a>
-          <a href="/listing-website" class="nav-link">Listing Website</a>
-          <a href="/contact" class="nav-link">Contact Us</a>
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <div class="nav-item-dropdown">
+            <a href="services.html" class="nav-link">Service</a>
+            <div class="dropdown-menu">
+              <a href="co-hosting-services.html" class="dropdown-item">Co-Hosting Services</a>
+              <a href="short-term-rental-licensing.html" class="dropdown-item">Short-Term Rental Licensing</a>
+            </div>
+          </div>
+          <a href="reviews.html" class="nav-link nav-link-active">Reviews</a>
+          <a href="faqs.html" class="nav-link">FAQ's</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
         </nav>
         <div class="nav-right">
-          <a href="/contact" class="btn btn-secondary">Consult with a professional</a>
+          <a href="contact.html" class="btn btn-secondary">Consult with a professional</a>
         </div>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation">
           <span class="nav-toggle-bar"></span>
@@ -39,45 +41,363 @@
     </header>
 
     <main>
-      <section class="inner-hero">
-        <div class="container fade-in-up">
-          <h1 class="inner-hero-title">Reviews</h1>
-          <p class="inner-hero-subtitle">
-            What property owners and guests are saying about partnering with 5star Co-Hosting.
-          </p>
+      <!-- Reviews Hero Section (Inspired by reference image) -->
+      <section class="reviews-hero">
+        <div class="container reviews-hero-grid">
+          <!-- Left Side: Content -->
+          <div class="reviews-hero-content fade-in-up">
+            <div class="hero-pill-v2">
+              <span class="pill-dot"></span>
+              <span>Testimonials</span>
+            </div>
+            <h1 class="reviews-hero-title">Real Stories from Our Happy Customers</h1>
+            <p class="reviews-hero-desc">
+              Experience the excellence of professional co-hosting that fits your investment goals. We take care of every detail so you can focus on what matters most.
+            </p>
+            <div style="margin-top: 30px;">
+              <a href="contact.html" class="btn btn-white">Call Us Now</a>
+            </div>
+            <div class="happy-customers-stats">
+              <div class="avatar-stack">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Customer 1">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Customer 2">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Customer 3">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Customer 4">
+              </div>
+              <div class="stats-text">
+                <span class="stats-num">2400+</span>
+                <span class="stats-label">Happy Customers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Scrolling Testimonial Columns -->
+          <div class="reviews-hero-visual">
+            <div class="review-scroll-column col-1">
+              <div class="scroll-track">
+                <!-- Card 1 -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Their co-hosting service is exceptional. My property revenue increased significantly within the first few months.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Laura Bennett</span>
+                      <span class="user-role">Property Owner</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Professional management at its best. The team handles everything from guest communication to maintenance flawlessly.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Jessica Nolan</span>
+                      <span class="user-role">Host Partner</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“The most reliable co-hosting partner we've found. They treat our property as if it were their own.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Marcus Reed</span>
+                      <span class="user-role">Investor</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Duplicate cards for infinite scroll -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Their co-hosting service is exceptional. My property revenue increased significantly within the first few months.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Laura Bennett</span>
+                      <span class="user-role">Property Owner</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Professional management at its best. The team handles everything from guest communication to maintenance flawlessly.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Jessica Nolan</span>
+                      <span class="user-role">Host Partner</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“The most reliable co-hosting partner we've found. They treat our property as if it were their own.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Marcus Reed</span>
+                      <span class="user-role">Investor</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-scroll-column col-2">
+              <div class="scroll-track reverse">
+                <!-- New Top Card (Cut look) -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Best co-hosting experience so far. Very professional team!”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Sophia White</span>
+                      <span class="user-role">Investor</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“The licensing guidance was a lifesaver. We were able to get our rental legal and active in record time.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Olivia Hart</span>
+                      <span class="user-role">New Host</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Seamless operations and happy guests. The 5-star co-hosting team really knows how to manage premium rentals.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Daniel Carter</span>
+                      <span class="user-role">Real Estate Investor</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Duplicate cards for infinite scroll -->
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Best co-hosting experience so far. Very professional team!”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Sophia White</span>
+                      <span class="user-role">Investor</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“The licensing guidance was a lifesaver. We were able to get our rental legal and active in record time.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Olivia Hart</span>
+                      <span class="user-role">New Host</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-card">
+                  <div class="scroll-stars">★★★★★</div>
+                  <p>“Seamless operations and happy guests. The 5-star co-hosting team really knows how to manage premium rentals.”</p>
+                  <div class="scroll-user">
+                    <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="User">
+                    <div class="user-info">
+                      <span class="user-name">Daniel Carter</span>
+                      <span class="user-role">Real Estate Investor</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container fade-in-up reviews-grid">
-          <article class="review-card">
-            <div class="review-text">
-              “5star Co-Hosting turned our second home into a reliable income stream.
-              Bookings and ratings increased within the first few months.”
+      <section class="reviews-masonry-section">
+        <div class="container fade-in-up">
+          <div class="section-header">
+            <div class="kicker kicker-v2">
+              <span class="kicker-dot"></span>
+              <span>Our Portfolio</span>
             </div>
-            <div class="review-meta">
-              <span>Property Owner</span>
-              <span class="review-stars">★★★★★</span>
+            <h2 class="section-title">Voices of Success</h2>
+            <p class="section-subtitle">
+              Discover how property owners are transforming their investments through our professional co-hosting services. Our partners consistently achieve higher returns while enjoying a completely hands-off management experience.
+            </p>
+          </div>
+
+          <!-- Pro Developer Tabs -->
+          <div class="reviews-tabs-wrapper">
+            <div class="reviews-tabs">
+              <span class="review-tab-link active" data-category="all" data-url="">All Reviews</span>
+              <span class="review-tab-link" data-category="airbnb" data-url="https://www.airbnb.com/rooms/1490743500936651239?guests=1&adults=1&s=67&unique_share_id=55f01c07-3df6-43e0-8635-4da67d18b552">AIRBNB</span>
+              <span class="review-tab-link" data-category="vrbo" data-url="https://www.vrbo.com/4791912">VRBO</span>
+              <span class="review-tab-link" data-category="booking" data-url="https://www.booking.com/hotel/us/luxury-getaway-at-eleven-twenty-feels-like-home.html">BOOKING</span>
+              <span class="review-tab-link" data-category="houfy" data-url="https://www.houfy.com/269509?guests=1&adults=1&children=0">HOUFY</span>
+              <span class="review-tab-link" data-category="hotelzify" data-url="https://1120ne13thaveunita.bookmystay.io/?utm_source=webShare">HOTELZIFY</span>
             </div>
-          </article>
-          <article class="review-card">
-            <div class="review-text">
-              “Guest communication and check-in were seamless. The space was spotless and every detail was thought through.”
+          </div>
+
+          <div class="reviews-grid-v3">
+            <!-- Card 1 -->
+            <article class="masonry-review-card" data-category="airbnb">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“Exceptional craftsmanship and fantastic customer service. They transformed our garden into a functional, beautiful space that our family enjoys daily.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Emma" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Emma <strong>Collins</strong></span>
+                  <span class="masonry-role">Tree Trimming & Plant Care</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="masonry-review-card" data-category="vrbo">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“Working with this team was an absolute pleasure. They were patient, responsive, and full of helpful ideas. The transformation they delivered added so much value.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Jessica" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Jessica <strong>Nolan</strong></span>
+                  <span class="masonry-role">Patio & Pathway Design</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="masonry-review-card" data-category="booking">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“The level of detail and care was remarkable. They understood our vision and delivered something even better. The project was completed on time and within budget.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Victoria" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Victoria <strong>Perez</strong></span>
+                  <span class="masonry-role">Patio & Pathway Design</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="masonry-review-card" data-category="houfy">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“Their creativity and professionalism made a huge difference. They balanced function and beauty perfectly and kept us updated throughout the project.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Mark" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Mark <strong>Stevenson</strong></span>
+                  <span class="masonry-role">Lawn Care & Maintenance</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Platform Link Button at Bottom -->
+          <div class="platform-link-container">
+            <a href="#" class="btn btn-platform-link" target="_blank" style="display: none;">
+              Book on <span class="platform-name"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-masonry-section-v2">
+        <div class="container fade-in-up">
+          <div class="section-header">
+            <div class="kicker kicker-v2">
+              <span class="kicker-dot"></span>
+              <span>Global Reach</span>
             </div>
-            <div class="review-meta">
-              <span>Guest</span>
-              <span class="review-stars">★★★★★</span>
+            <h2 class="section-title">Operations & Excellence</h2>
+            <p class="section-subtitle">
+              We manage every aspect of your property's operations with precision and care. From guest communication to maintenance and marketing, our team ensures your investment is always performing at its peak.
+            </p>
+          </div>
+
+          <!-- Tabs for 3rd Section -->
+          <div class="reviews-tabs-wrapper">
+            <div class="reviews-tabs">
+              <span class="review-tab-link active" data-category="all" data-url="">All Reviews</span>
+              <span class="review-tab-link" data-category="savvy" data-url="https://www.savvy.com/listings/new-luxe-4br-ba-home-w-h-pool-m-golf-andpooltable-fort-lauderdale-fl-Xi-A?adultCount=1&childCount=0&infantCount=0&petCount=0">SAVVY</span>
+              <span class="review-tab-link" data-category="whimstay" data-url="https://www.whimstay.com/detail/New-Luxe-4BRBA-Home-wH-Pool-M-Golf-PoolTable/6a958f5b3c1f7e00f26d03df92b7f61f">WHIMSTAY</span>
+              <span class="review-tab-link" data-category="nofie" data-url="https://stay.nofie.com/listing-detail/48c7ee34-c67e-44b1-8f64-fbc0fd70bcc0/">NOFIE</span>
+              <span class="review-tab-link" data-category="lake" data-url="https://www.lake.com/properties/new-luxe-4brba-home-wh-pool-m-golf-pooltable">LAKE</span>
+              <span class="review-tab-link" data-category="zillow" data-url="#">ZILLOW</span>
             </div>
-          </article>
-          <article class="review-card">
-            <div class="review-text">
-              “Their pricing strategy and licensing guidance removed all the guesswork for us as first-time hosts.”
-            </div>
-            <div class="review-meta">
-              <span>New Host</span>
-              <span class="review-stars">★★★★★</span>
-            </div>
-          </article>
+          </div>
+
+          <div class="reviews-grid-v3">
+            <!-- Card 5 -->
+            <article class="masonry-review-card" data-category="savvy">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“From concept to completion, the entire experience was outstanding. They listened carefully, offered expert suggestions, and executed everything perfectly.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Sofia" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Sofia <strong>Müller</strong></span>
+                  <span class="masonry-role">Seasonal Maintenance</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="masonry-review-card" data-category="whimstay">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“Professional, skilled, and incredibly easy to work with. They transformed a simple yard into a beautiful, functional retreat. We appreciated their transparency.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Laura" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Laura <strong>Bennett</strong></span>
+                  <span class="masonry-role">Tree Trimming & Plant Care</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="masonry-review-card" data-category="nofie">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“Could not be happier with the transformation. Their dedicated approach, clear communication, and strong work ethic made the process enjoyable.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Emily" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Emily <strong>Davis</strong></span>
+                  <span class="masonry-role">Lawn Care & Maintenance</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="masonry-review-card" data-category="lake">
+              <div class="masonry-stars">★★★★★</div>
+              <p class="masonry-quote">“Seamless operations and happy guests. The 5-star co-hosting team really knows how to manage premium rentals. Highly recommended for property owners.”</p>
+              <div class="masonry-user">
+                <img src="https://a0.muscache.com/im/pictures/user/095f04e6-cd51-4929-8a25-256ffa8dc76e.jpg?im_w=240" alt="Daniel" class="masonry-avatar">
+                <div class="masonry-info">
+                  <span class="masonry-name">Daniel <strong>Carter</strong></span>
+                  <span class="masonry-role">Real Estate Investor</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Platform Link Button at Bottom -->
+          <div class="platform-link-container">
+            <a href="#" class="btn btn-platform-link" target="_blank" style="display: none;">
+              Book on <span class="platform-name"></span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -93,7 +413,7 @@
         <!-- Links and Copyright on the Right -->
         <div class="footer-right">
           <ul class="footer-links">
-            <li><a href="/contact" class="footer-link">Support</a></li>
+            <li><a href="contact.html" class="footer-link">Support</a></li>
             <li><a href="#" class="footer-link">Warranty</a></li>
             <li><a href="#" class="footer-link">Terms & Conditions</a></li>
             <li><a href="#" class="footer-link">Privacy Policy</a></li>
@@ -107,5 +427,48 @@
   </div>
 
   <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.review-tab-link');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const category = tab.getAttribute('data-category');
+          const platformUrl = tab.getAttribute('data-url');
+          const platformName = tab.textContent;
+          const parentSection = tab.closest('section');
+          const cards = parentSection.querySelectorAll('.masonry-review-card');
+          const siblings = parentSection.querySelectorAll('.review-tab-link');
+          const platformBtnContainer = parentSection.querySelector('.platform-link-container');
+          const platformBtn = parentSection.querySelector('.btn-platform-link');
+          const platformSpan = parentSection.querySelector('.platform-name');
+
+          // Update active tab
+          siblings.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          // Update platform button
+          if (platformUrl && platformUrl !== "#") {
+            platformBtn.href = platformUrl;
+            platformSpan.textContent = platformName;
+            platformBtn.style.display = 'inline-flex';
+          } else {
+            platformBtn.style.display = 'none';
+          }
+
+          // Filter cards within this section
+          cards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            
+            if (category === 'all' || cardCategory === category) {
+              card.classList.remove('is-hidden');
+            } else {
+              card.classList.add('is-hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
